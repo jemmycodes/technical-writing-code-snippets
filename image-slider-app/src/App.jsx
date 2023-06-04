@@ -1,5 +1,5 @@
 import "./App.css";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import back from "./assets/back.svg";
 import next from "./assets/next.svg";
 
@@ -29,10 +29,6 @@ function App() {
     }
     setActiveImage(activeImage - 1);
   };
-
-  useEffect(() => {
-    console.log(imagesArray[activeImage], activeImage);
-  }, [activeImage]);
 
   return (
     <main>
